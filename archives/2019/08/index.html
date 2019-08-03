@@ -6,20 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>LeetCode题解-二分查找 | 石大嘴</title>
+  <title>Archives: 2019/8 | 石大嘴</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;emsp;&amp;emsp;先给大家献上一首码农之歌，然后就开始了各种刷题路上不同类型题的题解。反正惨就完事了~~~  &amp;emsp;&amp;emsp;刷题的大体思路是跟着CyC2018大佬的思路做的（此处奉上deilou的github：https://github.com/CyC2018/CS-Notes）。 1. 求开方69. Sqrt(x) (Easy) 123456Input: 4Output: 2">
-<meta name="keywords" content="LeetCode">
-<meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode题解-二分查找">
-<meta property="og:url" content="http://yoursite.com/LeetCode题解—-二分查找.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="石大嘴">
+<meta property="og:url" content="http://yoursite.com/archives/2019/08/index.html">
 <meta property="og:site_name" content="石大嘴">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;先给大家献上一首码农之歌，然后就开始了各种刷题路上不同类型题的题解。反正惨就完事了~~~  &amp;emsp;&amp;emsp;刷题的大体思路是跟着CyC2018大佬的思路做的（此处奉上deilou的github：https://github.com/CyC2018/CS-Notes）。 1. 求开方69. Sqrt(x) (Easy) 123456Input: 4Output: 2">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-03T14:30:04.517Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LeetCode题解-二分查找">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;先给大家献上一首码农之歌，然后就开始了各种刷题路上不同类型题的题解。反正惨就完事了~~~  &amp;emsp;&amp;emsp;刷题的大体思路是跟着CyC2018大佬的思路做的（此处奉上deilou的github：https://github.com/CyC2018/CS-Notes）。 1. 求开方69. Sqrt(x) (Easy) 123456Input: 4Output: 2">
+<meta name="twitter:title" content="石大嘴">
   
     <link rel="alternative" href="/atom.xml" title="石大嘴" type="application/atom+xml">
   
@@ -159,217 +154,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-LeetCode题解—-二分查找" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      LeetCode题解-二分查找
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/剑指Offer题解.html" class="archive-article-date">
+  	<time datetime="2019-08-03T14:15:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-03</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/剑指Offer题解.html">剑指Offer题解</a>
     </h1>
   
 
-        
-        <a href="/LeetCode题解—-二分查找.html" class="archive-article-date">
-  	<time datetime="2019-06-01T09:03:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=31311449&auto=1&height=66"></iframe>
-&emsp;&emsp;先给大家献上一首码农之歌，然后就开始了各种刷题路上不同类型题的题解。反正惨就完事了~~~
+        <div class="article-info info-on-right">
+          
+          
 
-<p>&emsp;&emsp;刷题的大体思路是跟着CyC2018大佬的思路做的（此处奉上deilou的github：<a href="https://github.com/CyC2018/CS-Notes）。" target="_blank" rel="noopener">https://github.com/CyC2018/CS-Notes）。</a></p>
-<h4 id="1-求开方"><a href="#1-求开方" class="headerlink" title="1. 求开方"></a>1. 求开方</h4><p><a href="https://leetcode.com/problems/sqrtx/description/" target="_blank" rel="noopener">69. Sqrt(x) (Easy)</a></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Input: 4</span><br><span class="line">Output: 2</span><br><span class="line"></span><br><span class="line">Input: 8</span><br><span class="line">Output: 2</span><br><span class="line">Explanation: 8 的平方根是 2.82842..., 由于返回类型是整数，小数部分将被舍去。</span><br></pre></td></tr></table></figure>
-
-<p>&emsp;&emsp;一个数 x 的开方 sqrt 一定在 0 ~ x 之间，并且满足 sqrt == x / sqrt。可以利用二分查找在 0 ~ x 之间查找 sqrt。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">mySqrt</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n &lt;= <span class="number">1</span>)</span><br><span class="line">        <span class="keyword">return</span> n;</span><br><span class="line">    <span class="keyword">int</span> lo = <span class="number">1</span>, hi = n;</span><br><span class="line">    <span class="keyword">while</span>(lo &lt;= hi)&#123;</span><br><span class="line">        <span class="keyword">int</span> mid = lo + (hi - lo) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">int</span> sqrt = n / mid;</span><br><span class="line">        <span class="keyword">if</span>(sqrt == mid)</span><br><span class="line">            <span class="keyword">return</span> mid;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(sqrt &gt; mid)</span><br><span class="line">            lo = mid + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            hi = mid - <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> hi;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h4 id="2-大于给定元素的最小元素"><a href="#2-大于给定元素的最小元素" class="headerlink" title="2. 大于给定元素的最小元素"></a>2. 大于给定元素的最小元素</h4><p><a href="https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/" target="_blank" rel="noopener">744. Find Smallest Letter Greater Than Target (Easy)</a></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Input:</span><br><span class="line">letters = ["c", "f", "j"]</span><br><span class="line">target = "d"</span><br><span class="line">Output: "f"</span><br><span class="line"></span><br><span class="line">Input:</span><br><span class="line">letters = ["c", "f", "j"]</span><br><span class="line">target = "k"</span><br><span class="line">Output: "c"</span><br></pre></td></tr></table></figure>
-
-<p>&emsp;&emsp;题目描述：给定一个有序的字符数组 letters 和一个字符 target，要求找出 letters 中大于 target 的最小字符，如果找不到就返回第 1 个字符。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">char</span> <span class="title">nextGreatestLetter</span><span class="params">(<span class="keyword">char</span>[] letters, <span class="keyword">char</span> target)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n = letters.length;</span><br><span class="line">    <span class="keyword">int</span> lo = <span class="number">0</span>, hi = n - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(lo &lt;= hi)&#123;</span><br><span class="line">    	<span class="keyword">int</span> mid = lo + (hi - lo) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>(letters[mid] &lt;= target)</span><br><span class="line">        	lo = mid + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            hi = mid - <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> lo &lt; n ? letters[lo] : letters[<span class="number">0</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>&emsp;&emsp;当mid恰好与target相同时，hi会变为mid - 1但是由于条件为lo &lt;= hi，故最后lo = hi + 1。</p>
-<h4 id="3-有序数组的-Single-Element"><a href="#3-有序数组的-Single-Element" class="headerlink" title="3. 有序数组的 Single Element"></a>3. 有序数组的 Single Element</h4><p><a href="https://leetcode.com/problems/single-element-in-a-sorted-array/description/" target="_blank" rel="noopener">540. Single Element in a Sorted Array (Medium)</a></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: [1, 1, 2, 3, 3, 4, 4, 8, 8]</span><br><span class="line">Output: 2</span><br></pre></td></tr></table></figure>
-
-<p>&emsp;&emsp;题目描述：一个有序数组只有一个数不出现两次，找出这个数。</p>
-<p>&emsp;&emsp;要求以 O(logN) 时间复杂度进行求解，因此不能遍历数组并进行异或操作来求解，这么做的时间复杂度为 O(N)。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">singleNonDuplicate</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> lo = <span class="number">0</span>, hi = nums.length - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(lo &lt; hi)&#123;</span><br><span class="line">        <span class="keyword">int</span> mid = lo + (hi - lo ) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>(mid % <span class="number">2</span> == <span class="number">1</span>)</span><br><span class="line">            mid -= <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span>(nums[mid] == nums[mid + <span class="number">1</span>])&#123;</span><br><span class="line">            lo = mid + <span class="number">2</span>;   </span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            hi = mid;</span><br><span class="line">            <span class="comment">//第奇数个数字不与下一个数字相同的话，那么只有一个的数值出现在这个数之前的那一段</span></span><br><span class="line">        &#125;        </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> nums[lo];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="4-第一个错误的版本"><a href="#4-第一个错误的版本" class="headerlink" title="4. 第一个错误的版本"></a>4. 第一个错误的版本</h4><p><a href="https://leetcode.com/problems/first-bad-version/description/" target="_blank" rel="noopener">278. First Bad Version (Easy)</a></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">给定 n = 5，并且 version = 4 是第一个错误的版本。</span><br><span class="line"></span><br><span class="line">调用 isBadVersion(3) -&gt; false</span><br><span class="line">调用 isBadVersion(5) -&gt; true</span><br><span class="line">调用 isBadVersion(4) -&gt; true</span><br><span class="line"></span><br><span class="line">所以，4 是第一个错误的版本。</span><br></pre></td></tr></table></figure>
-
-<p>&emsp;&emsp;题目描述：给定一个元素 n 代表有 [1, 2, …, n] 版本，在第 x 位置开始出现错误版本，导致后面的版本都错误。可以调用 isBadVersion(int x) 知道某个版本是否错误，要求找到第一个错误的版本。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">firstBadVersion</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> lo = <span class="number">1</span>, hi = n;</span><br><span class="line">    <span class="keyword">while</span>(lo &lt; hi)&#123;</span><br><span class="line">        <span class="keyword">int</span> mid = lo + (hi - lo) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>(isBadVersion(mid))&#123;</span><br><span class="line">            hi = mid;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            lo = mid + <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> lo;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="5-旋转数组的最小数字"><a href="#5-旋转数组的最小数字" class="headerlink" title="5. 旋转数组的最小数字"></a>5. 旋转数组的最小数字</h4><p><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/" target="_blank" rel="noopener">153. Find Minimum in Rotated Sorted Array (Medium)</a></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: [3,4,5,1,2],</span><br><span class="line">Output: 1</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">findMin</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> lo = <span class="number">0</span>, hi = nums.length - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(lo &lt; hi)&#123;</span><br><span class="line">        <span class="keyword">int</span> mid = lo + (hi - lo) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>(nums[mid] &gt; nums[hi])&#123;</span><br><span class="line">            lo = mid + <span class="number">1</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            hi = mid;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> nums[hi];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="6-查找区间"><a href="#6-查找区间" class="headerlink" title="6. 查找区间"></a>6. 查找区间</h4><p><a href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/" target="_blank" rel="noopener">34. Find First and Last Position of Element in Sorted Array</a></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Input: nums = [5,7,7,8,8,10], target = 8</span><br><span class="line">Output: [3,4]</span><br><span class="line"></span><br><span class="line">Input: nums = [5,7,7,8,8,10], target = 6</span><br><span class="line">Output: [-1,-1]</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">int</span>[] searchRange(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">    <span class="keyword">int</span> begin = BinarySearch(nums, target);</span><br><span class="line">    <span class="keyword">int</span> end = BinarySearch(nums, target + <span class="number">1</span>);</span><br><span class="line">    <span class="keyword">if</span>(begin == nums.length || nums[begin] != target)</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;-<span class="number">1</span>, -<span class="number">1</span>&#125;;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;begin, Math.max(begin, end - <span class="number">1</span>)&#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">BinarySearch</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> lo = <span class="number">0</span>, hi = nums.length;</span><br><span class="line">    <span class="comment">//hi设置为nums.length是为了防止整个数组都是target的情况[2, 2, 2]</span></span><br><span class="line">    <span class="keyword">while</span>(lo &lt; hi)&#123;</span><br><span class="line">        <span class="keyword">int</span> mid = lo + (hi - lo) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>(nums[mid] &gt;= target)</span><br><span class="line">            hi = mid;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            lo = mid + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> lo;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">LeetCode</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/LeetCode题解—-二分查找.html" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/搜索-DFS-BFS-回溯.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          LeetCode题解-搜索(DFS BFS 回溯)
-        
-      </div>
-    </a>
   
   
-    <a href="/男神经的叨叨叨开始了.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">男神经的叨叨叨开始了</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -392,8 +219,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
